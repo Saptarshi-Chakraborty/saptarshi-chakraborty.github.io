@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import styles from '../styles/Index.module.css'
 
 export default function Home() {
   return (
@@ -9,9 +10,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main >
-       <h2>Hello World !</h2>
+
+        <nav className={styles.navbar}>
+          <ul>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+
+        <h2>Hello World !</h2>
       </main>
+
     </>
   )
 }
